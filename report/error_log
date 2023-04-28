@@ -1,0 +1,10 @@
+[12-Jan-2023 03:38:15 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home3/gyanmanjarividya/public_html/reg/report/class/DataSource.php on line 48
+[12-Jan-2023 03:38:15 UTC] PHP Notice:  Problem with connecting to database. in /home3/gyanmanjarividya/public_html/reg/report/class/DataSource.php on line 51
+[12-Jan-2023 03:38:15 UTC] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home3/gyanmanjarividya/public_html/reg/report/class/DataSource.php:54
+Stack trace:
+#0 /home3/gyanmanjarividya/public_html/reg/report/class/DataSource.php(54): mysqli->set_charset('utf8')
+#1 /home3/gyanmanjarividya/public_html/reg/report/class/DataSource.php(37): Phppot\DataSource->getConnection()
+#2 /home3/gyanmanjarividya/public_html/reg/report/class/Product.php(13): Phppot\DataSource->__construct()
+#3 /home3/gyanmanjarividya/public_html/reg/report/index.php(6): Phppot\Product->__construct()
+#4 {main}
+  thrown in /home3/gyanmanjarividya/public_html/reg/report/class/DataSource.php on line 54
